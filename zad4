@@ -1,0 +1,21 @@
+//4
+#include<stdio.h>
+main()
+{
+	int a[50],n, sum = 0, n1 = 0, i;
+	float ars;
+	printf("\n Unesi  broj ponavljanja(max 50): ");
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		printf(" \n Unesi %d. broj: ", i + 1);
+		scanf("%d", &a[i]);
+	n1++;
+	sum += a[i];
+		}
+	ars = (float)sum / n1;
+	for (i = 0; i < n; i++) {
+		if (a[i] % 2 == 0 && a[i] > ars)
+			printf("\n Broj %d je veci od arihmeticke sredine i paran je!\n ", a[i]);
+	}
+
+}
