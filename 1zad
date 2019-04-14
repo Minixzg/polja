@@ -1,0 +1,22 @@
+//1
+#include<stdio.h>
+#include<math.h>
+main() {
+	int a[6], i;
+	float k[6];
+	for (i = 0; i < 6; i++) {
+		printf("\n Unesi %d. broj: ", i + 1);
+		scanf("%d", &a[i]);
+		if (a[i] < 0) {
+			k[i] = a[i] * a[i];
+			printf("\n Kvadrat broja je: %.0f \n", k[i]);
+		}
+		else if (a[i] > 0) {
+			k[i] = sqrt(a[i]);
+			printf("\n Korjen broja je: %.2f \n", k[i]);
+		}
+		else
+			printf("\n Ucitana je nula!\n");
+
+	}
+}
