@@ -1,0 +1,13 @@
+#include<stdio.h>
+main() {
+	int i, a[5], x[5];
+	for (i = 0; i < 5; i++) {
+		printf("\n Unesi %d. broj: ",i+1);
+		scanf("%d", &a[i]);
+		x[i] = a[i] + 3;
+	}
+	printf("\n Uneseni brojevi uvecani za 3 su:\n ");
+	for (i = 0; i < 5; i++) 
+		printf("%d. broj uvecan je %d\n ",i+1,x[i]);
+
+}
