@@ -1,0 +1,12 @@
+#include<stdio.h>
+main() {
+	int a[7], b[7], i;
+	for (i = 0; i < 7; i++) {
+		printf("\n Unesi %d. broj: ", i + 1);
+		scanf("%d", &a[i]);
+		b[i] = a[i] + 5;
+	}
+	printf("\n Unesni brojevi uvecani za 5 : ");
+	for (i = 0; i < 7; i++)
+		printf("\n %d", b[i]);
+}
