@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	int  sum = 0, n1 = 0, i;
+	float a[6], ars;
+	for (i = 0; i < 6; i++) {
+		printf(" \n Unesi %d. broj: ", i + 1);
+		scanf("%f", &a[i]);
+			n1++;
+			sum += (int)a[i];
+	}
+	ars = (float)sum / n1;
+	printf("\n Aritmeticka sredina neparnih broje je %.2f\n", ars);
+
+}
