@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int  i, a[5], sto[5],max=9;
+	for (i = 0; i < 5; i++) {
+		printf(" \n Unesi %d. troznamenkasti broj: ", i + 1);
+		scanf("%d", &a[i]);
+		sto[i] =abs(a[i]) / 100;
+		if (sto[i] > max)
+			max = sto[i];
+	}
+	printf("\nNajveca znamenka stotica je %d!\n", max);
+}
