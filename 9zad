@@ -9,7 +9,7 @@ main()
 	}
 	for (i = 0; i < 7; i++) {
 		if (des[i] % 3 == 0)
-			printf(" \n Znamenka desetica %d. broja (%d) je dljeljiva s 3.\n", i + 1, des[i]);
+			printf(" \n Znamenka desetica %d. broja (%d) je dljeljiva s 3.\n", i + 1, a[i]);
 
 	}
 
