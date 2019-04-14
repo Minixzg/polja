@@ -1,0 +1,19 @@
+#include<stdio.h>
+main()
+{
+	int  i;
+	float a[7];
+	for (i = 0; i < 7; i++) {
+		printf(" \n Unesi %d. broj: ", i + 1);
+		scanf("%f", &a[i]);
+	}
+	for (i = 0; i < 7; i++) {
+		if ((int)a[i] % 2 == 0 && a[i] != 0)
+			printf(" \n Cjeli dio %d. broja paran.", i + 1);
+		else if ((int)a[i] % 2 != 0 && a[i] != 0)
+			printf(" \n Cjeli dio %d. broja neparan.", i + 1);
+		else
+			printf(" \n Cjeli dio %d. broja je 0.", i + 1);
+	}
+
+}
