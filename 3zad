@@ -1,0 +1,15 @@
+//3
+#include<stdio.h>
+main()
+{
+	int a[10],  i;
+	for (i = 0; i < 10; i++) {
+		printf(" \n Unesi %d. broj: ", i + 1);
+		scanf("%d", &a[i]);
+	}
+	for (i = 0; i < 10; i++) {
+		if (a[i] > 0 && a[i] % 2 == 0)
+			printf("\n %d. broj %d) je paran i pozitivan! \n", i + 1, a[i]);
+	}
+   
+}
